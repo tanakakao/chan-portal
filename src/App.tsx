@@ -65,8 +65,9 @@ function App() {
           <h1>
             {isRetroMode ? (
               <>
-                <span className="retro-title-line">CHAN</span>
-                <span className="retro-title-line retro-title-line--accent">PORTAL</span>
+                <span className="retro-title-line">MATERIALS</span>
+                <span className="retro-title-line retro-title-line--accent">ANALYSIS</span>
+                <span className="retro-title-line retro-title-line--sub">WORKBENCH</span>
               </>
             ) : (
               'Materials Analysis Workbench'
@@ -84,7 +85,7 @@ function App() {
           ))}
         </section>
 
-        <footer>{isRetroMode ? '© 2026 CHAN PORTAL' : 'Materials Analysis Workbench'}</footer>
+        <footer>{isRetroMode ? '© 2026 MATERIALS ANALYSIS WORKBENCH' : 'Materials Analysis Workbench'}</footer>
       </main>
     </div>
   )
