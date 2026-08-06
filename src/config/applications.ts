@@ -1,10 +1,11 @@
-import { BrainCircuit, GitFork, Microscope } from 'lucide-react'
+import { BrainCircuit, GitFork, LayoutGrid, Microscope } from 'lucide-react'
 import type { ApplicationDefinition } from '../types/application'
 
 const DEFAULT_URLS = {
   bochan: 'http://127.0.0.1:5173',
   malchan: 'http://127.0.0.1:5174',
   cauchan: 'http://127.0.0.1:5175',
+  dchan: 'http://127.0.0.1:5176',
 } as const
 
 export const applications: ApplicationDefinition[] = [
@@ -37,5 +38,15 @@ export const applications: ApplicationDefinition[] = [
     url: import.meta.env.VITE_CAUCHAN_URL ?? DEFAULT_URLS.cauchan,
     icon: GitFork,
     accent: 'violet',
+  },
+  {
+    id: 'optimal-design',
+    projectName: 'dchan',
+    displayName: '実験計画',
+    description: '因子と水準を設定し、効率的な実験候補点を生成します。',
+    keywords: ['最適計画', '候補点生成', '実験効率化'],
+    url: import.meta.env.VITE_DCHAN_URL ?? DEFAULT_URLS.dchan,
+    icon: LayoutGrid,
+    accent: 'red',
   },
 ]
