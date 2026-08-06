@@ -1,6 +1,6 @@
 # chan-portal
 
-`bochan`、`malchan`、`cauchan` から目的に合う分析ツールを選び、各 Web アプリへ移動するためのポータルです。分析処理やバックエンド処理は持ちません。
+`bochan`、`malchan`、`cauchan`、`dchan` から目的に合う分析ツールを選び、各 Web アプリへ移動するためのポータルです。分析処理やバックエンド処理は持ちません。
 
 ## 対象アプリ
 
@@ -9,6 +9,7 @@
 | bochan | ベイズ最適化 | `http://127.0.0.1:5173` |
 | malchan | 機械学習 | `http://127.0.0.1:5174` |
 | cauchan | 因果分析 | `http://127.0.0.1:5175` |
+| dchan | 実験計画 | `http://127.0.0.1:5176` |
 
 ## 必要環境
 
@@ -43,6 +44,7 @@ Windows では `start_web.bat` をダブルクリックできます。Node.js �
 VITE_BOCHAN_URL=http://127.0.0.1:5173
 VITE_MALCHAN_URL=http://127.0.0.1:5174
 VITE_CAUCHAN_URL=http://127.0.0.1:5175
+VITE_DCHAN_URL=http://127.0.0.1:5176
 ```
 
 未設定の項目には表のデフォルト URL が使われます。空文字または HTTP(S) 以外の不正な URL は無効となり、カードに「URLが設定されていません」と表示されます。
