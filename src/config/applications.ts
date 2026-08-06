@@ -1,4 +1,4 @@
-import { BrainCircuit, GitFork, Grid3X3, Microscope } from 'lucide-react'
+import { BrainCircuit, GitFork, LayoutGrid, Microscope } from 'lucide-react'
 import type { ApplicationDefinition } from '../types/application'
 
 const DEFAULT_URLS = {
@@ -46,7 +46,7 @@ export const applications: ApplicationDefinition[] = [
     description: '因子と水準を設定し、効率的な実験候補点を生成します。',
     keywords: ['最適計画', '候補点生成', '実験効率化'],
     url: import.meta.env.VITE_DCHAN_URL ?? DEFAULT_URLS.dchan,
-    icon: Grid3X3,
+    icon: LayoutGrid,
     accent: 'red',
   },
 ]
